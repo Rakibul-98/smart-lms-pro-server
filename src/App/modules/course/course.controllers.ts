@@ -64,7 +64,6 @@ const getSingleCourse = async (req: Request, res: Response): Promise<any> => {
     try {
 
         const {courseId} = req.params;
-        console.log(courseId);
 
         const result = await CourseServices.getSingleCourseFromDB(courseId);
 
